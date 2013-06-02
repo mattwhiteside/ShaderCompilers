@@ -1,0 +1,218 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9A6B313175C0DED00DEC98E /* ShaderCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */; };
+		C9A6B314175C0DED00DEC98E /* ShaderCompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A6B312175C0DED00DEC98E /* ShaderCompiler.h */; };
+		C9A6B316175C0E2800DEC98E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B315175C0E2800DEC98E /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9A6B304175C0D9C00DEC98E /* libShaderCompiler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShaderCompiler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderCompiler.cpp; sourceTree = "<group>"; };
+		C9A6B312175C0DED00DEC98E /* ShaderCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderCompiler.h; sourceTree = "<group>"; };
+		C9A6B315175C0E2800DEC98E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9A6B301175C0D9C00DEC98E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A6B316175C0E2800DEC98E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9A6B2FB175C0D9C00DEC98E = {
+			isa = PBXGroup;
+			children = (
+				C9A6B315175C0E2800DEC98E /* OpenGL.framework */,
+				C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */,
+				C9A6B312175C0DED00DEC98E /* ShaderCompiler.h */,
+				C9A6B305175C0D9C00DEC98E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9A6B305175C0D9C00DEC98E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A6B304175C0D9C00DEC98E /* libShaderCompiler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9A6B302175C0D9C00DEC98E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A6B314175C0DED00DEC98E /* ShaderCompiler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9A6B303175C0D9C00DEC98E /* ShaderCompiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A6B308175C0D9C00DEC98E /* Build configuration list for PBXNativeTarget "ShaderCompiler" */;
+			buildPhases = (
+				C9A6B300175C0D9C00DEC98E /* Sources */,
+				C9A6B301175C0D9C00DEC98E /* Frameworks */,
+				C9A6B302175C0D9C00DEC98E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderCompiler;
+			productName = ShaderCompiler;
+			productReference = C9A6B304175C0D9C00DEC98E /* libShaderCompiler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9A6B2FC175C0D9C00DEC98E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Whoknows;
+			};
+			buildConfigurationList = C9A6B2FF175C0D9C00DEC98E /* Build configuration list for PBXProject "ShaderCompiler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9A6B2FB175C0D9C00DEC98E;
+			productRefGroup = C9A6B305175C0D9C00DEC98E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9A6B303175C0D9C00DEC98E /* ShaderCompiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9A6B300175C0D9C00DEC98E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A6B313175C0DED00DEC98E /* ShaderCompiler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9A6B306175C0D9C00DEC98E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9A6B307175C0D9C00DEC98E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9A6B309175C0D9C00DEC98E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9A6B30A175C0D9C00DEC98E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9A6B2FF175C0D9C00DEC98E /* Build configuration list for PBXProject "ShaderCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A6B306175C0D9C00DEC98E /* Debug */,
+				C9A6B307175C0D9C00DEC98E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9A6B308175C0D9C00DEC98E /* Build configuration list for PBXNativeTarget "ShaderCompiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A6B309175C0D9C00DEC98E /* Debug */,
+				C9A6B30A175C0D9C00DEC98E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9A6B2FC175C0D9C00DEC98E /* Project object */;
+}
