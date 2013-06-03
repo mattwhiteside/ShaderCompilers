@@ -10,6 +10,7 @@
 		C9A6B313175C0DED00DEC98E /* ShaderCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */; };
 		C9A6B314175C0DED00DEC98E /* ShaderCompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A6B312175C0DED00DEC98E /* ShaderCompiler.h */; };
 		C9A6B316175C0E2800DEC98E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B315175C0E2800DEC98E /* OpenGL.framework */; };
+		C9A6B331175C137900DEC98E /* ShaderCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		C9A6B311175C0DED00DEC98E /* ShaderCompiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderCompiler.cpp; sourceTree = "<group>"; };
 		C9A6B312175C0DED00DEC98E /* ShaderCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderCompiler.h; sourceTree = "<group>"; };
 		C9A6B315175C0E2800DEC98E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C9A6B32D175C124800DEC98E /* libShaderCompilers-cpp98.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libShaderCompilers-cpp98.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +27,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A6B316175C0E2800DEC98E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A6B32A175C124800DEC98E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A6B304175C0D9C00DEC98E /* libShaderCompiler.a */,
+				C9A6B32D175C124800DEC98E /* libShaderCompilers-cpp98.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +67,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A6B314175C0DED00DEC98E /* ShaderCompiler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A6B32B175C124800DEC98E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,23 @@
 			name = ShaderCompiler;
 			productName = ShaderCompiler;
 			productReference = C9A6B304175C0D9C00DEC98E /* libShaderCompiler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9A6B32C175C124800DEC98E /* ShaderCompilers-cpp98 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A6B330175C124800DEC98E /* Build configuration list for PBXNativeTarget "ShaderCompilers-cpp98" */;
+			buildPhases = (
+				C9A6B329175C124800DEC98E /* Sources */,
+				C9A6B32A175C124800DEC98E /* Frameworks */,
+				C9A6B32B175C124800DEC98E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShaderCompilers-cpp98";
+			productName = "ShaderCompilers-cpp98";
+			productReference = C9A6B32D175C124800DEC98E /* libShaderCompilers-cpp98.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +136,7 @@
 			projectRoot = "";
 			targets = (
 				C9A6B303175C0D9C00DEC98E /* ShaderCompiler */,
+				C9A6B32C175C124800DEC98E /* ShaderCompilers-cpp98 */,
 			);
 		};
 /* End PBXProject section */
@@ -112,6 +147,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A6B313175C0DED00DEC98E /* ShaderCompiler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A6B329175C124800DEC98E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A6B331175C137900DEC98E /* ShaderCompiler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +234,28 @@
 			};
 			name = Release;
 		};
+		C9A6B32E175C124800DEC98E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9A6B32F175C124800DEC98E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -211,6 +276,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C9A6B330175C124800DEC98E /* Build configuration list for PBXNativeTarget "ShaderCompilers-cpp98" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A6B32E175C124800DEC98E /* Debug */,
+				C9A6B32F175C124800DEC98E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
